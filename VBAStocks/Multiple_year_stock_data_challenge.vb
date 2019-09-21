@@ -7,7 +7,6 @@ Dim yearClose, yearOpen, openCount, yearChange, perChange, stock_total, max_num,
 For Each ws In Worksheets
 
 last_row = ws.Cells(Rows.Count, 1).End(xlUp).Row
-
 row_out = 2
 max_num = 0
 min_num = 0
@@ -72,8 +71,7 @@ ws.Cells(4, 14).Value = "Greatest Total Volume"
             End If
             
             'Row Counter
-            row_out = row_out + 1
-            
+            row_out = row_out + 1            
             'Reset
             stock_total = 0
             openCount = 0
