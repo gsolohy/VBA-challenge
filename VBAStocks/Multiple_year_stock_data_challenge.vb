@@ -38,6 +38,7 @@ ws.Cells(4, 14).Value = "Greatest Total Volume"
 
             yearChange = yearClose - yearOpen
             ws.Cells(row_out, 10).Value = yearChange
+            ws.Cells(row_out, 10).NumberFormat = "$0.00"
             
             'Conditional Formatting
             If yearChange > 0 Then
